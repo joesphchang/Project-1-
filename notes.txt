@@ -1,0 +1,26 @@
+Pseudocoding for Space Man
+
+Declare constants for player
+Declare constants for timer
+Declare constants for tries
+Declare constants for alphabet 
+Declare constants strings of words
+
+Reference gameBoard 
+Reference successfully answering the word right
+Reference strings of words 
+
+Event listeners for click 
+Event listeners for click on alphabet and if letter is wrong
+
+Functions for alphabet usage
+Functions for tries number connecting to wrong click of letters, invoking CSS to display image of space-ship if letter is wrong.
+Functions for alphabet connecting invoking the gameBoard
+Functions for timer timing down everytime a letter is called. Resets everytime a letter is called
+Function for gamePlay of player
+
+/*----- constants -----*/
+/*----- app's state (variables) -----*/
+/*----- cached element references -----*/
+/*----- event listeners -----*/
+/*----- functions -----*/
