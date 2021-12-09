@@ -43,3 +43,4 @@ Game Plays
 - As the player, I would love to see high-scores of everybody that has played the game and record my name into the list.
 - As the player, I would like if I got the word right, it wouldn't restart my number of tries.
 - As the player, I would like to see if I lose an animation of a space-ship flying off.
+- As the player, I would like to see different themes switching every-time I guess the word right. 
