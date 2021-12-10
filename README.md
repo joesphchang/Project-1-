@@ -16,18 +16,21 @@ HTML,
 ## Review on self
 
 What have I learned throughout this game?
+    I have learned a lot about myself through this game. When it comes to coding a whole project, you really have to take your time with each piece instead of rushing into each function. I've learned from a lot of my peers on organizing and making sure that I'm just working on one piece and not all of them all-together. Making sure that I'm tackling one small goal at a time.
 
 What are the struggles that I encountered when I was making this game?
+    I struggled with getting my buttons to show on the screen and to whether or not hard-code it within the HTML or give it a const within the javascript. This was definitely something I was confuse about for an hour. I also struggled with creating each button to function that I wanted too. 
 
 What was I most happy about when creating this game?
+    Getting my visuals to connect to the wrong guesses and getting the whole game to work.
 
 ## Wire Frames
 
 The Beginning
-![BEGINNING OF PLAY](aseets/wireframe-main.png)
+![BEGINNING OF PLAY](assets/beginingofgame.png)
 
 Game Plays
-![WHEN PLAYED](aseets/wireframe-played.png)
+![WHEN PLAYED](assets/whenlose.png)
 
 ## User Stories
 

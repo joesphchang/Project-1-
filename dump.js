@@ -6,3 +6,7 @@
 // correct guesses
 let correctGuesses = [];
 	// for (let i = 0; i < spaceImgs.length; i++)
+    // stored guesses
+let correctGuess = [];
+// number of spaces in word '-'
+let space = '';console.log('You are correct!');

@@ -12,10 +12,6 @@ const gameWords = [
 
 /*----- app's state (variables) -----*/
 
-// stored guesses
-let correctGuess = [];
-// number of spaces in word '-'
-let space = '';
 // lives
 let lives = 9;
 // timer
@@ -55,7 +51,6 @@ function handleClick(event) {
 	event.target.style.color = 'red';
 	event.target.disabled = 'disabled';
 	if (gameWord.includes(event.target.innerText.toLowerCase())) {
-		console.log('You are correct!');
 		for (let i = 0; i < gameWord.length; i++) {
 			if (gameWord[i] === event.target.innerText.toLowerCase()) {
 				document.querySelectorAll('.active')[i].innerText =
@@ -64,17 +59,19 @@ function handleClick(event) {
 		}
 	} else {
 		playGame = function () {
-			if (!gameWord.includes(event.target.innerText.toLowerCase())) 
-				{
+			if (!gameWord.includes(event.target.innerText.toLowerCase())) {
 				spaceImgs[imgIndex].style.visibility = 'visible';
 				imgIndex++;
 				lives--;
- 				showLives.innerHTML = 'You have ' + lives + ' lives';
-				}
+				showLives.innerHTML = 'You have ' + lives + ' lives';
+			}
 		};
 	}
+	if (lives === 0) {
+		alert('you lose!');
+		location.reload();
+	}
 	playGame();
-	updateGameBoard();
 }
 
 function randomWords() {
@@ -90,6 +87,5 @@ randomWords();
 
 function updateGameBoard() {
 	// console.log('hello from updateGameBoard');
-	correctGuesses = [];
-	wrongGuesses = [];
+	location.reload();
 }
