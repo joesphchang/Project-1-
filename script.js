@@ -11,22 +11,17 @@ const gameWords = [
 ];
 
 /*----- app's state (variables) -----*/
+
 // stored guesses
-let guess = [];
-// correct guesses
-let correctGuesses = [];
-// wrong guesses
-let wrongGuesses = [];
+let correctGuess = [];
 // number of spaces in word '-'
 let space = '';
 // lives
 let lives = 9;
 // timer
 let timer = 10;
-// lives counter
-let counter;
-// Selected Words
-// let selectedWords = gameWords[0];
+// Image index
+let imgIndex = 0;
 
 // Generating random words
 let gameWord = gameWords[Math.floor(Math.random() * gameWords.length)];
@@ -40,16 +35,15 @@ let remainingLetters = gameWords.length;
 const resetBtn = document.querySelector('#resetBtn');
 const gameBoard = document.querySelector('.grid');
 const letterBtn = document.querySelector('#alphabet');
-const canvas = document.querySelector('.canvas');
 const spaces = document.querySelector('.space');
 const showLives = document.querySelector('.livesCount');
+const spaceImgs = document.querySelectorAll('.cat-spaceships img');
 
 /*----- event listeners -----*/
-// gameBoard.addEventListener('click', init);
 letterBtn.addEventListener('click', (event) => {
 	handleClick(event);
 });
-resetBtn.addEventListener('click', function() {
+resetBtn.addEventListener('click', function () {
 	updateGameBoard();
 });
 /*----- functions -----*/
@@ -57,8 +51,7 @@ resetBtn.addEventListener('click', function() {
 // function for alphabet usage
 // also create a list of letters and add it to alphabet container
 function handleClick(event) {
-	// console.log('hello from handleClick');
-	console.log(event.target.id);
+	// console.log(event.target.id);
 	event.target.style.color = 'red';
 	event.target.disabled = 'disabled';
 	if (gameWord.includes(event.target.innerText.toLowerCase())) {
@@ -71,18 +64,13 @@ function handleClick(event) {
 		}
 	} else {
 		playGame = function () {
-			showLives.innerHTML = 'You have ' + lives + ' lives';
-			const imgBlock = document.querySelectorAll('.img-blocks');
-			while ((lives -= 1)) {
-				if (wrongGuesses !== gameWord) imgBlock.style.opacity = '1';
-				document.body.appendChild(imgBlock);
-				console.log(wrongGuesses);
-			}
-			for (let i = 0; i < gameWord.length; i++) {
-				if (correctGuesses + newSpaces === gameWord.length) {
-					showLives.innerHTML = 'You guessed the word right!';
+			if (!gameWord.includes(event.target.innerText.toLowerCase())) 
+				{
+				spaceImgs[imgIndex].style.visibility = 'visible';
+				imgIndex++;
+				lives--;
+ 				showLives.innerHTML = 'You have ' + lives + ' lives';
 				}
-			}
 		};
 	}
 	playGame();
@@ -101,6 +89,7 @@ function randomWords() {
 randomWords();
 
 function updateGameBoard() {
-	console.log('hello from updateGameBoard');
-
+	// console.log('hello from updateGameBoard');
+	correctGuesses = [];
+	wrongGuesses = [];
 }

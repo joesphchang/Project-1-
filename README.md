@@ -8,6 +8,11 @@ Javascript,
 HTML,
 & CSS
 
+## Installation Instructions
+
+1. Fork and Clone in terminal 
+2. Cd into folder space-man
+
 ## Review on self
 
 What have I learned throughout this game?

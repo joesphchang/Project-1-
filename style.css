@@ -2,14 +2,14 @@ body {
 	text-align: center;
 	background-image: url(assets/new-background.jpg);
 	background-size: fit;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .grid {
 	display: grid;
-	max-width: 750px;
+	max-width: 700px;
 	margin: 0 auto;
-	height: 400px;
+	height: 550px;
 	border: 3px dashed blueviolet;
 }
 
@@ -23,7 +23,7 @@ body {
 	width: 25%;
 	height: 22%;
 	flex-wrap: nowrap;
-	opacity: 0;
+	visibility: hidden;
 }
 
 .btn {
@@ -36,6 +36,14 @@ body {
 	text-align: center;
 }
 
+h1 {
+	font-size: xx-large;
+}
+
+h2 {
+	font-size: large;
+}
+
 h1,
 h2,
 p {
@@ -46,8 +54,6 @@ p {
 	font-size: x-large;
 }
 
-#resetBtn:hover {
-	border-radius: 8px;
-	padding: 8px 8px 2px 15px;
-	background-color: cornflowerblue;
+#resetBtn {
+	margin-bottom: 10px;
 }
