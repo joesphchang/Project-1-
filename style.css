@@ -1,5 +1,8 @@
 body {
 	text-align: center;
+	background-image: url(assets/new-background.jpg);
+	background-size: fit;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .grid {
@@ -7,7 +10,7 @@ body {
 	max-width: 750px;
 	margin: 0 auto;
 	height: 400px;
-	border: 5px dashed red;
+	border: 3px dashed blueviolet;
 }
 
 .space {
@@ -20,10 +23,31 @@ body {
 	width: 25%;
 	height: 22%;
 	flex-wrap: nowrap;
-	/* opacity: 0; */
+	opacity: 0;
 }
 
 .btn {
 	margin-top: 8px;
-	margin: 2px;
+	margin: 5px;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 8px 8px 2px 15px;
+	display: inline-block;
+	text-align: center;
+}
+
+h1,
+h2,
+p {
+	color: black;
+}
+
+p {
+	font-size: x-large;
+}
+
+#resetBtn:hover {
+	border-radius: 8px;
+	padding: 8px 8px 2px 15px;
+	background-color: cornflowerblue;
 }

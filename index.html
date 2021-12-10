@@ -10,6 +10,9 @@
 <body>
     <h1>Space Man</h1>
     <h2>Theme: Space</h2>
+    <div class="livesCounter">
+        <p class="livesCount"></p>
+    </div>
 <main>
     <div class="grid">
         <div class="img-blocks">
@@ -57,12 +60,18 @@
             <div class="space"></div> 
     </div>
         </div>
-        <div class="livesCounter">
-            <p>You got 9 tries to guess the word right!</p>
-            </p>
+        
+        <button class="newBtn primary-btn" id="resetBtn">Play again</button>
+        <hr>
+        <div id="modal">
+            <h2>How to play Space Man</h2>
+            <p>The game space-man is usually played in a group or with another person. The person chosen has to think of a word in a
+            certain category for the challengers. This is a game of right or wrong. You only have 6 tries to guess the word before
+            the space-ship is built and flies away. You have the whole alphabet to guess through and once you guess that letter it
+            is canceled out for the duration of the round. If you get the word right, you are rewarded with street credits and a
+            pat on the back. The challenger in this game has the choice of continuing or stopping the game right there. There's only
+            so many rounds of words, but once you get to the end you will feel like a space-man/woman.</p>
         </div>
-        <button class="resetBtn">Play again</button>
-
 </main>
 
     <script src="script.js"></script>
