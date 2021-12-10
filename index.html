@@ -15,7 +15,8 @@
     </div>
 <main>
     <div class="grid">
-        <div id="winState"></div>
+        <div>
+            <h2 id="winState"></h2></div>
         <div class="cat-spaceships">
             <div class="top-row">
             <img src="assets/9.jpg" alt="block-9" class="hidden" id="block-9">
@@ -33,7 +34,6 @@
             <img src="assets/1.jpg" alt="block-1" class="hidden" id="block-1">
             </div>
         </div>
-    </div>
     </div>
     <div class="alphabet-container">
         <div class="row no-gutters" id="alphabet">
@@ -68,16 +68,18 @@
     </div>
         </div>
         <button class="newBtn primary-btn" id="resetBtn">Play again</button>
-        <hr>
+        <button class="modal-buttons" id="openModal">How to Play</button>
         <div id="modal">
-            <h2>How to play Space Man</h2>
-            <p>The game space-man is usually played in a group or with another person. The person chosen has to think of a word in a
-            certain category for the challengers. This is a game of right or wrong. You only have 6 tries to guess the word before
-            the space-ship is built and flies away. You have the whole alphabet to guess through and once you guess that letter it
-            is canceled out for the duration of the round. If you get the word right, you are rewarded with street credits and a
-            pat on the back. The challenger in this game has the choice of continuing or stopping the game right there. There's only
-            so many rounds of words, but once you get to the end you will feel like a space-man/woman.</p>
+            <div id="modal-textbox">
+                <a id="close" href="#">Close</a>
+                <h1>What is Space Cat?</h1>
+                        <p> Space Cat is usually played with a group or another person. But today you are playing against the browser! You have 9 tries to guess the word that below before building up the space-cat ship! The alphabet is below and they're clickable. If you win, you get a pat on the back. And if you lose you still get a pat on the back for trying.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <hr>
+       
 </main>
 
     <script src="script.js"></script>

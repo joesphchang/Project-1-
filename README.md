@@ -22,7 +22,7 @@ What are the struggles that I encountered when I was making this game?
     I struggled with getting my buttons to show on the screen and to whether or not hard-code it within the HTML or give it a const within the javascript. This was definitely something I was confuse about for an hour. I also struggled with creating each button to function that I wanted too. 
 
 What was I most happy about when creating this game?
-    Getting my visuals to connect to the wrong guesses and getting the whole game to work.
+    Getting my visuals to connect to the wrong guesses. 
 
 ## Wire Frames
 

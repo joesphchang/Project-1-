@@ -10,3 +10,16 @@ let correctGuesses = [];
 let correctGuess = [];
 // number of spaces in word '-'
 let space = '';console.log('You are correct!');
+
+function checkWinner() {
+	let correctGuesses = document.querySelectorAll('.active');
+	if (correctGuesses.forEach(element => element.includes(‘_’)) {
+		correctGuesses.innerHTML = 'You won!';
+		winState.append(correctGuesses);
+	}
+}
+// check to see if there was a win 
+// check to see if spaces are filled up
+// grab ALL the active class elements 
+// loop through 'active' class elements 
+// if none of them have a under-score innerHTML the user wins! 

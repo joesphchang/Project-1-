@@ -34,7 +34,7 @@ const letterBtn = document.querySelector('#alphabet');
 const spaces = document.querySelector('.space');
 const showLives = document.querySelector('.livesCount');
 const spaceImgs = document.querySelectorAll('.cat-spaceships img');
-
+const winState = document.querySelector('#winState');
 /*----- event listeners -----*/
 letterBtn.addEventListener('click', (event) => {
 	handleClick(event);
@@ -54,7 +54,9 @@ function handleClick(event) {
 		for (let i = 0; i < gameWord.length; i++) {
 			if (gameWord[i] === event.target.innerText.toLowerCase()) {
 				document.querySelectorAll('.active')[i].innerText =
-					event.target.innerText.toLowerCase();
+				event.target.innerText.toLowerCase();
+				// check to see if winner 
+				// checkWinner();
 			}
 		}
 	} else {
@@ -71,8 +73,18 @@ function handleClick(event) {
 		alert('you lose!');
 		location.reload();
 	}
-	playGame();
+	playGame(); 
+
 }
+
+// function checkWinner() {
+// 	let correctGuesses = document.querySelectorAll('.active');
+// 	if (correctGuesses.forEach(element => element.includes("_"))) {
+// 		correctGuesses.innerText = 'You won!';
+// 		winState.append(correctGuesses);
+// 	}
+// }
+
 
 function randomWords() {
 	// console.log('hello from random words');
@@ -89,3 +101,22 @@ function updateGameBoard() {
 	// console.log('hello from updateGameBoard');
 	location.reload();
 }
+
+// Modal 
+const openBtn = document.getElementById('openModal');
+const modal = document.getElementById('modal');
+const close = document.getElementById('close');
+
+//Functions
+const openModal = () => {
+	modal.style.display = 'block';
+};
+
+const closeModal = () => {
+	modal.style.display = 'none';
+};
+
+//Event Listeners
+openBtn.addEventListener('click', openModal);
+
+close.addEventListener('click', closeModal);
