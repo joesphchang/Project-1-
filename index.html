@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Man</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Space Cat</h1>
-    <h2>Theme: Space Words</h2>
+    <h1 class="header">Space Cat</h1>
+    <h2 class="header">Theme: Space Words</h2>
     <div class="livesCounter">
         <p class="livesCount"></p>
     </div>
@@ -71,9 +72,12 @@
         <button class="modal-buttons" id="openModal">How to Play</button>
         <div id="modal">
             <div id="modal-textbox">
-                <a id="close" href="#">Close</a>
-                <h1>What is Space Cat?</h1>
-                        <p> Space Cat is usually played with a group or another person. But today you are playing against the browser! You have 9 tries to guess the word that below before building up the space-cat ship! The alphabet is below and they're clickable. If you win, you get a pat on the back. And if you lose you still get a pat on the back for trying.</p>
+                
+                <h1 id="modal-header">What is Space Cat?</h1>
+                <hr>
+                        <p id="modal-text"> Space Cat is usually played with a group or another person. But today you are playing against the browser! You have 9 tries to guess the word below before the space-cat ship is built! The alphabet is below and they're clickable. If you win, you get a pat on the back. And if you lose you still get a pat on the back for trying.</p>
+                        <p id="modal-text">Hint: The word you're guessing is in the console log.</p>
+                        <button><a id="close" href="#">Close</a></button>
                     </div>
                 </div>
             </div>

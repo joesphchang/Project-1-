@@ -54,8 +54,8 @@ function handleClick(event) {
 		for (let i = 0; i < gameWord.length; i++) {
 			if (gameWord[i] === event.target.innerText.toLowerCase()) {
 				document.querySelectorAll('.active')[i].innerText =
-				event.target.innerText.toLowerCase();
-				// check to see if winner 
+					event.target.innerText.toLowerCase();
+				// check to see if winner
 				// checkWinner();
 			}
 		}
@@ -73,8 +73,7 @@ function handleClick(event) {
 		alert('you lose!');
 		location.reload();
 	}
-	playGame(); 
-
+	playGame();
 }
 
 // function checkWinner() {
@@ -84,7 +83,6 @@ function handleClick(event) {
 // 		winState.append(correctGuesses);
 // 	}
 // }
-
 
 function randomWords() {
 	// console.log('hello from random words');
@@ -102,7 +100,7 @@ function updateGameBoard() {
 	location.reload();
 }
 
-// Modal 
+// Modal
 const openBtn = document.getElementById('openModal');
 const modal = document.getElementById('modal');
 const close = document.getElementById('close');

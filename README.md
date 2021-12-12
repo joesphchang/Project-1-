@@ -6,31 +6,36 @@ The game space-man is usually played in a group or with another person. The pers
 
 Javascript,
 HTML,
-& CSS
+CSS
+SASS
 
 ## Installation Instructions
 
-1. Fork and Clone in terminal 
+1. Fork and Clone in terminal
 2. Cd into folder space-man
 
 ## Review on self
 
 What have I learned throughout this game?
-    I have learned a lot about myself through this game. When it comes to coding a whole project, you really have to take your time with each piece instead of rushing into each function. I've learned from a lot of my peers on organizing and making sure that I'm just working on one piece and not all of them all-together. Making sure that I'm tackling one small goal at a time.
+I have learned a lot about myself through this game. When it comes to coding a whole project, you really have to take your time with each piece instead of rushing into each function. I've learned from a lot of my peers on organizing and making sure that I'm just working on one piece and not all of them all-together. Making sure that I'm tackling one small goal at a time.
 
 What are the struggles that I encountered when I was making this game?
-    I struggled with getting my buttons to show on the screen and to whether or not hard-code it within the HTML or give it a const within the javascript. This was definitely something I was confuse about for an hour. I also struggled with creating each button to function that I wanted too. 
+I struggled with getting my buttons to show on the screen and to whether or not hard-code it within the HTML or give it a const within the javascript. This was definitely something I was confuse about for an hour. I also struggled with creating each button to function that I wanted too.
 
 What was I most happy about when creating this game?
-    Getting my visuals to connect to the wrong guesses. 
+Getting my visuals to connect to the wrong guesses.
 
 ## Wire Frames
 
 The Beginning
-![BEGINNING OF PLAY](assets/beginingofgame.png)
+![BEGINNING OF PLAY](assets/Beginning.png)
 
 Game Plays
-![WHEN PLAYED](assets/whenlose.png)
+![WHEN PLAYED](assets/Gameplay.png)
+
+## Link to the game
+
+https://joesphchang.github.io/space-cat/#
 
 ## User Stories
 
@@ -51,4 +56,4 @@ Game Plays
 - As the player, I would love to see high-scores of everybody that has played the game and record my name into the list.
 - As the player, I would like if I got the word right, it wouldn't restart my number of tries.
 - As the player, I would like to see if I lose an animation of a space-ship flying off.
-- As the player, I would like to see different themes switching every-time I guess the word right. 
+- As the player, I would like to see different themes switching every-time I guess the word right.
