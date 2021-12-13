@@ -23,9 +23,9 @@ What are the struggles that I encountered when I was making this game?
 I struggled with getting my buttons to show on the screen and to whether or not hard-code it within the HTML or give it a const within the javascript. This was definitely something I was confuse about for an hour. I also struggled with creating each button to function that I wanted too.
 
 What was I most happy about when creating this game?
-Getting my visuals to connect to the wrong guesses.
+Getting my visuals to connect to the wrong guesses. My SASS styling makes me happy. 
 
-## Wire Frames
+## Game Play 
 
 The Beginning
 ![BEGINNING OF PLAY](assets/Beginning.png)
@@ -36,6 +36,16 @@ Game Plays
 ## Link to the game
 
 https://joesphchang.github.io/space-cat/#
+
+
+## Wire Frame
+
+Beginning of Play 
+![WireFrame Beginning](assets/wireframe-main.png)
+
+Game Play 
+![WireFrame Game Play](assets/wireframe-played.png)
+
 
 ## User Stories
 
@@ -57,3 +67,6 @@ https://joesphchang.github.io/space-cat/#
 - As the player, I would like if I got the word right, it wouldn't restart my number of tries.
 - As the player, I would like to see if I lose an animation of a space-ship flying off.
 - As the player, I would like to see different themes switching every-time I guess the word right.
+
+### Thanks
+Thanks to GA and the team of teachers that help me create my first game. 
