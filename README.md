@@ -46,7 +46,6 @@ Beginning of Play
 Game Play 
 ![WireFrame Game Play](assets/wireframe-played.png)
 
-
 ## User Stories
 
 ### MVP Goals
