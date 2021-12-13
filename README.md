@@ -12,7 +12,7 @@ SASS
 ## Installation Instructions
 
 1. Fork and Clone in terminal
-2. Cd into folder space-man
+2. Cd into folder space-cat
 
 ## Review on self
 
