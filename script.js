@@ -39,9 +39,7 @@ const winState = document.querySelector('#winState');
 letterBtn.addEventListener('click', (event) => {
 	handleClick(event);
 });
-resetBtn.addEventListener('click', function () {
-	updateGameBoard();
-});
+resetBtn.addEventListener('click', updateGameBoard);
 /*----- functions -----*/
 
 // function for alphabet usage

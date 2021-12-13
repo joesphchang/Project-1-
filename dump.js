@@ -23,3 +23,12 @@ function checkWinner() {
 // grab ALL the active class elements 
 // loop through 'active' class elements 
 // if none of them have a under-score innerHTML the user wins! 
+
+function checkWinner() {
+	let correctGuesses = document.querySelectorAll('.active');
+	for (let i = 0; i < event.target.length; i++) {
+		if (correctGuesses + gameWord === event.target.length) {
+			showLives.innerHTML = "You Won"';
+		}
+	}
+}
