@@ -1,13 +1,16 @@
 /*----- constants -----*/
 const gameWords = [
-	'asteroid',
+	'mars',
 	'jupiter',
-	'comet',
+	'neptune',
 	'moon',
 	'uranus',
-	'crater',
-	'astronomy',
-	'satelite',
+	'sun',
+	'earth',
+	'venus',
+	'saturn',
+	'mercury',
+	'pluto',
 ];
 
 /*----- app's state (variables) -----*/
@@ -34,7 +37,7 @@ const letterBtn = document.querySelector('#alphabet');
 const spaces = document.querySelector('.space');
 const showLives = document.querySelector('.livesCount');
 const spaceImgs = document.querySelectorAll('.cat-spaceships img');
-const winState = document.querySelector('#winState');
+
 /*----- event listeners -----*/
 letterBtn.addEventListener('click', (event) => {
 	handleClick(event);
@@ -65,11 +68,11 @@ function handleClick(event) {
 				lives--;
 				showLives.innerHTML = 'You have ' + lives + ' lives';
 			}
-		};
+		}
 	}
 	if (lives === 0) {
-		alert('you lose!');
-		location.reload();
+	const winState = document.querySelector('.winState');
+	winState.innerHTML = 'You Lost! Hit Play Again to try again.'
 	}
 	playGame();
 }
